@@ -13,8 +13,6 @@ Awesome BEV perception papers and toolbox for achieving SOTA results
 
 This is an open source BEV 3D object detection toolbox based on PyTorch, associated with the survey paper "[Delving into the Devils of Bird’s-eye-view Perception: A Review, Evaluation and Recipe](https://arxiv.org/abs/2209.05324)". This toolbox provides useful recipe for BEV camera-based 3D object detection, including solid data augmentation strategies, efficient BEV encoder design, perception heads and loss function family, useful test-time augmentation and ensemble policy, and so on. We hope this toolbox can not only be a good starting point for new beginners but also help current researchers in the BEV perception community.
 
-For beginners, you can follow the 
-
 ### Major Features
 
 * **Support Waymo Open Dataset (WOD) for camera-only detection** <br> We provide a suitable playground for new-beginners in this area, including hands-on tutorial and small-scale dataset (1/5 WOD in kitti format) to validate idea.
@@ -52,18 +50,23 @@ We have also summarized some conventional methods for different tasks.
 * [Conventional Methods Sensor Fusion](docs/paper_list/sensor_fusion.md)
 
 ## <div id='tutorial'>Getting Started</div>
-We wrote detailed instruction for the installation of environment, preparation of data and usage of code.
 
-### 1. Installation
+### For beginners
+We provide a pipeline for beginners to run a baseline experiment on Waymo 1/5 training data and wrote detailed instruction for the installation of environment, preparation of data and usage of code.
+
+#### 1. Installation
 Please refer to [instatllation.md](docs/installation.md) for installation of environment.
 
-### 2. Data Preparation
+#### 2. Data Preparation
 
 Please refer to [data_preparation.md](docs/data_preparation.md) for preparation of dataset and pretrained model.
 
-### 3. Usage
+#### 3. Usage
 Please refer to [usage.md](docs/usage.md) for commands of training and evaluation.
 
+### For expert
+
+We provide bag of tricks to boost the performance of the baseline below implemented by our toolbox.
 
 ## <div id='tricks'>Bag of Tricks</div>
 We provide an overview of the bag of tricks as the model zoo, which can be grouped as four types -- data augmentation, design of BEV encoder, loss family and different 3D detection head and post-process policy. Please click the link of each trick for more details. We also offer their corresponding configs and performance in the table below for the convenience of users.
